@@ -17,7 +17,6 @@ public class BankAccount {
 
     }
 
-
     public int deposit(double amount) {
         if (amount <= 0) {
             return 2;
@@ -85,10 +84,4 @@ public class BankAccount {
     private long generateAccountNumber() {
         return count++;
     }
-
-
-
-
-
-
 }
