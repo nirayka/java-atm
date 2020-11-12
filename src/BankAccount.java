@@ -75,7 +75,7 @@ public class BankAccount {
     public String getMaskedAccountNumber() {
 
         String hiddenNumber = Long.toString(accountNumber);
-        hiddenNumber = hiddenNumber.substring(Math.max(0,hiddenNumber.length()-4), hiddenNumber.length());
+        hiddenNumber = hiddenNumber.substring(Math.max(0,hiddenNumber.length()-4));
         return "****" + String.format("%04d", Integer.parseInt(hiddenNumber));
 
 

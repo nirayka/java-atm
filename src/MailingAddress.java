@@ -55,7 +55,7 @@ public class MailingAddress {
 
     public String getFormattedAddress(){
         String formattedAdd = primaryStreet + "\n";
-        if(secondaryStreet != null){
+        if(secondaryStreet != null) {
             formattedAdd+=secondaryStreet+"\n";
         }
         formattedAdd+=city + ", ";

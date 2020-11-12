@@ -5,7 +5,7 @@ public class AccountOwner {
     private static String emailAddress;
     private static long phoneNumber;
     private static MailingAddress mailingAddress;
-    public AccountOwner(String salutation, String firstName, String lastName, String emailAddress, long phoneNumber, MailingAddress mailingAddress){
+    public AccountOwner(String salutation, String firstName, String lastName, String emailAddress, long phoneNumber, MailingAddress mailingAddress) {
         this.salutation = salutation;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -30,10 +30,10 @@ public class AccountOwner {
     }
 
 
-    public String getName(int format){
-        if(format == 3){
+    public String getName(int format) {
+        if(format == 3) {
             return lastName + ", " + firstName;
-        }else if (format == 2){
+        }else if (format == 2) {
             return salutation + ". " + lastName;
         }
         return firstName + " " + lastName;
